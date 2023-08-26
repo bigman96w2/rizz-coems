@@ -1,7 +1,7 @@
 local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/Rafacasari/ArrayField/main/v2.lua'))()
-
+ 
 local Window = Rayfield:CreateWindow({
-	Name = "Coems Rizz(beta) | .gg/u3y36KQqjg",
+	Name = "Coems Rizz (UPDATED BETA) | .gg/u3y36KQqjg",
 	LoadingTitle = "Coems Rizz Script",
 	LoadingSubtitle = ".gg/u3y36KQqjg",
     OldTabLayout = true,
@@ -26,36 +26,36 @@ local Window = Rayfield:CreateWindow({
 		Key = "Hello",
 	},
 })
-
+ 
 local Home = Window:CreateTab("Home")
 local HomeSection1 = Home:CreateSection("Welcome", false)
-
+ 
 local Paragraph = Home:CreateParagraph({
 	Title = "Welcome!",
 	Content = "Welcome to coems rizz script beta edition for new ones or free or paid come at https://discord.gg/u3y36KQqjg.",
 }, HomeSection1)
-
+ 
 local HomeSection2 = Home:CreateSection("Credits", false)
-
+ 
 local Credits1 = Home:CreateLabel("Kai - Development.", HomeSection2)
 local Credits2 = Home:CreateLabel("Abdullah(coemslover) - Rizzer Maker .", HomeSection2)
 local Credits3 = Home:CreateLabel("🤑(owner) - Owner Of The Idea And Help A Lot", HomeSection2)
 local Credits3 = Home:CreateLabel("ali - Helper give us rizzes", HomeSection2)
 local Credits3 = Home:CreateLabel("Aymen - Helper Devolper ", HomeSection2)
 local Update1 = Home:CreateSection("Updates", false)local Up1_1 = Home:CreateLabel("[ + ] Beta Realsed!", Update1)
-
+ 
 function Chat(message)
 	local args = {
 		[1] = message,
 		[2] = "All",
 	}
-
+ 
 	game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
 end
-
+ 
 local PickupLines = Window:CreateTab("beta")
 local PickupLinesSection1 = PickupLines:CreateSection("beta", false)
-
+ 
 local TableOfbeta = {
     "are u a looking goddes? cuz u took my attenion.",
     "Do you have a name, or i cal call u mine?",
@@ -68,7 +68,7 @@ local TableOfbeta = {
     "are u moon cuz u killed me with ur looks.",
     "Is your username a keyboard? Because you're just my type.",
 }
-
+ 
 for i, v in pairs(TableOfbeta) do
 	PickupLines:CreateButton({
 		Name = v,
@@ -79,11 +79,11 @@ for i, v in pairs(TableOfbeta) do
 		end,
 	})
 end
-
-
+ 
+ 
 local PickupLines = Window:CreateTab("WeirdRizz")
 local PickupLinesSection1 = PickupLines:CreateSection("WeirdRizz", false)
-
+ 
 local TableOfWeirdRizz = {  
  "Are You roblox?, Because i want to play with you on my bed everyday.",
     "Do You Have A Dad?, Because I Can Be Yours.😌",
@@ -93,7 +93,7 @@ local TableOfWeirdRizz = {
     "Are U My Mom? Because I drink it💀.",
     "I Missed Your Sis., Because She Left Me With The Milk",
 }
-
+ 
 for i, v in pairs(TableOfWeirdRizz) do
 	PickupLines:CreateButton({
 		Name = v,
@@ -104,16 +104,43 @@ for i, v in pairs(TableOfWeirdRizz) do
 		end,
 	})
 end
+ 
+ 
+local PickupLines = Window:CreateTab("FunnyRizz")
+local PickupLinesSection1 = PickupLines:CreateSection("FunnyRizz", false)
+ 
+local TableOfFunnyRizz = {  
+ "Are you John Cena? Because I’ve never Cena girl like you before.",
+    "Are you the school stairs? Because you take my breath away.",
+    "Are you the border? Cause I can’t get over you..",
+    "If I could recreate the alphabet, I would put U and I together.",
+    "Are you an artist? Because you’re really good at drawing me in.",
+    "Are you my dog? Because you’re an angel..",
+    "Are you a cop? Because you took my breath away.",
+}
+ 
+for i, v in pairs(TableOfFunnyRizz) do
+	PickupLines:CreateButton({
+		Name = v,
+		Interact = "Chat",
+        SectionParent = FunnyRizzection1,
+		Callback = function()
+			Chat(v)
+		end,
+	})
+end
+ 
+ 
 
 
 local AntiChatLogs = Window:CreateTab("Anti Chat Loggers")
 local AntiChatLogsSection1 = AntiChatLogs:CreateSection("Anti Chat Loggers", false)
-
+ 
 local ACLNote = AntiChatLogs:CreateParagraph({
 	Title = "Note",
 	Content = "Please use any of the ACLs listed below as it prevents your chat messages from getting tracked stopping you from getting banned from roblox for dating or something.",
 }, AntiChatLogsSection1)
-
+ 
 local Acl1 = AntiChatLogs:CreateButton({
 	Name = "Simple(recommend)",
 	Interact = "Execute",
@@ -122,7 +149,7 @@ local Acl1 = AntiChatLogs:CreateButton({
 		loadstring(game:HttpGet('https://pastebin.com/raw/tFqBYJeD'))()
 	end,
 })
-
+ 
 local Acl2 = AntiChatLogs:CreateButton({
 	Name = "Anthony's ACL (Rewritten)",
 	Interact = "Execute",
@@ -131,7 +158,7 @@ local Acl2 = AntiChatLogs:CreateButton({
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/AnthonyIsntHere/anthonysrepository/main/scripts/AntiChatLogger.lua'))()
 	end,
 })
-
+ 
 local Acl3 = AntiChatLogs:CreateButton({
 	Name = "Anthony's ACL",
 	Interact = "Execute",
@@ -140,4 +167,3 @@ local Acl3 = AntiChatLogs:CreateButton({
 		loadstring(game:HttpGet('https://pastebin.com/raw/PZbnE4Fj'))()
 	end,
 })
-
