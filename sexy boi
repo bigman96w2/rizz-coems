@@ -80,30 +80,6 @@ for i, v in pairs(TableOfUnSpokenRizz) do
 	})
 end
  
-local PickupLines = Window:CreateTab("ArabRizz")
-local PickupLinesSection1 = PickupLines:CreateSection("ArabRizz", false)
- 
-local TableOfArabRizz = {  
-    "Coming Soon",
-    "Coming Soon",
-    "Coming Soon",
-    "Coming Soon",
-    "Coming Soon",
-    "Coming Soon.",
-    "Coming Soon",
-}
- 
-for i, v in pairs(TableOfArabRizz) do
-	PickupLines:CreateButton({
-		Name = v,
-		Interact = "Chat",
-        SectionParent = ArabRizzection1,
-		Callback = function()
-			Chat(v)
-		end,
-	})
-end
-
 local PickupLines = Window:CreateTab("WeirdRizz")
 local PickupLinesSection1 = PickupLines:CreateSection("WeirdRizz", false)
  
@@ -122,6 +98,30 @@ for i, v in pairs(TableOfWeirdRizz) do
 		Name = v,
 		Interact = "Chat",
         SectionParent = WeirdRizzection1,
+		Callback = function()
+			Chat(v)
+		end,
+	})
+end
+ 
+local PickupLines = Window:CreateTab("ArabRizz")
+local PickupLinesSection1 = PickupLines:CreateSection("ArabRizz", false)
+ 
+local TableOfArabRizz = {  
+    "coming soon",
+    "coming soon",
+    "coming soon",
+    "coming soon",
+    "coming soon",
+    "coming soon",
+    "coming soon",
+}
+ 
+for i, v in pairs(TableOfArabRizz) do
+	PickupLines:CreateButton({
+		Name = v,
+		Interact = "Chat",
+        SectionParent = ArabRizzection1,
 		Callback = function()
 			Chat(v)
 		end,
